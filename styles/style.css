@@ -294,4 +294,15 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__footer_header , .page__footer_text{
     text-align: center;
+    color: var(--text3);
+}
+
+.page__main_list {
+    font-size: 14px;
+}
+
+.page__main_listpoint::marker {
+    font-size: 30px;
+    color: var(--main);
+    margin-top: -3px;
 }
