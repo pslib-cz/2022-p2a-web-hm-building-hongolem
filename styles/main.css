@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;700;800&display=swap');
+
+:root {
+    --main: #eb6c27;
+    --background: #ffffff;
+    --text: #3a3a3a;
+    --text2: #888888;
+    --overlay: #24242466;
+    --overlay2: #242424CC;
+    --header: #ffffff;
+    --font2: 'Inter';
+}
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+}
