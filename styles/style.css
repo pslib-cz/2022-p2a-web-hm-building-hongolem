@@ -1,3 +1,11 @@
+.font1 {
+    font-family: var(--font);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
 .color {
     color: var(--main);
 }
@@ -21,6 +29,19 @@
     height: 50%;
 }
 
+nav input[type="checkbox"]:checked ~ .page__nav_container{
+    display: block;
+}
+
+.page__nav_box {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 999;
+    opacity: 0;
+}
+
 .page__nav_img {
     height: 100%;
 }
@@ -30,7 +51,7 @@
     right: 20px;
     width: 48px;
     height: 8px;
-    background: linear-gradient(90deg, var(--main) 50%, #ffffff 100%);
+    background: linear-gradient(90deg, var(--main) 50%, var(--background) 100%);
 }
 
 .page__menu::before, .page__menu::after {
@@ -86,6 +107,7 @@
     width: 80%;
     text-align: left;
     padding-left: 2em;
+    color: var(--text3);
 }
 
 .page__nav_item.active {
@@ -105,7 +127,7 @@
     padding: .5em 0 .5em 0;
     display: block;
     text-decoration: none;
-    color: var(--text2);
+    color: var(--text3);
     font-weight: 550;
     list-style: none;
     width: 100%;
@@ -121,7 +143,7 @@
     justify-content: end;
     flex-direction: column;
     text-align: center;
-    color: var(--text2);
+    color: var(--text3);
 }
 
 .page__hero_overlay{
@@ -181,6 +203,7 @@
 
 .page__btn{
     text-decoration: none;
+    font-weight: 700;
     color: var(--main);
     padding: .8em 2em .8em 2em ;
     display: block;
@@ -191,14 +214,14 @@
 }
 
 .page__btn--filled{
-    color: var(--text2);
+    color: var(--text3);
     background-color: var(--main);
     border: none;   
 }
 
 .page__btn--white{
     color: var(--main);
-    background-color: var(--text2);
+    background-color: var(--text3);
     border: none;
 }
 
@@ -227,11 +250,9 @@
 
 .page__banner_text{
     position: relative;
-    font-family: 'Inter';
-    color: #ffffff;
+    color: var(--text3);
     font-size: 17px;
     font-weight: 700;
-
 }
 
 .page__card, .page__banner, .page__reference, .page__footer{
