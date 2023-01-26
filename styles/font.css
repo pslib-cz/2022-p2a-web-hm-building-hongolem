@@ -1,0 +1,11 @@
+.font1 {
+    font-family: var(--font);
+}
+
+.font2 {
+    font-family: var(--font2);
+}
+
+.color {
+    color: var(--main);
+}

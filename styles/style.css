@@ -1,15 +1,3 @@
-.font1 {
-    font-family: var(--font);
-}
-
-.font2 {
-    font-family: var(--font2);
-}
-
-.color {
-    color: var(--main);
-}
-
 .page {
     margin-top: 80px;
 }
@@ -81,11 +69,10 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     top: 85px;
     padding: 0;
     margin: 0;
-    left: 50%;
-    transform: translate(-50%);
     list-style: none;
     position: absolute;
-    width: 88.89%;
+    left: 1em;
+    right: 1.3em;
     background-color: var(--main);
     display: none;
 }
@@ -99,7 +86,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     border-color: transparent transparent var(--main) transparent;
     margin-top: -25px;
     position: absolute;
-    left: 87%;
+    right: 0.5em;
     top: 0;
 }
 
@@ -160,6 +147,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__hero_text {
     font-size: 20px;
+    font-weight: 400;
+    padding: 1em;
+    display: block;
 }
 
 .page__hero_header, .page__hero_text{
@@ -167,12 +157,29 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     color: var(--header);
 }
 
-.page__cards{
-    margin:0 1em 0 1em;
+.page__cards {
+    padding: 1.5em;
+}
+
+
+.page__card{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.page__reference {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.page__main_intro {
+    padding: 1.5em;
 }
 
 .page__main_header {
     font-size: 22px;
+    font-weight: 700;
 }
 
 .page__main_text {
@@ -229,6 +236,12 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     margin: 0 auto;
 }
 
+.btn {
+    font-size: 14px;
+    padding: 12px 40px;
+
+}
+
 .page__banner{
     padding: 1em;
     width: calc(100% - 2em);
@@ -241,7 +254,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__banner_overlay{
     width: 100%;
-    height: calc(12em + 2em);
+    height: 14em;
     left: 0;
     top: 0;
     position: absolute;
@@ -280,7 +293,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     margin: 0;
 }
 
-.page__reference_header,.page__reference_text{
+.page__reference_header, .page__reference_text{
     text-align: center;
 }
 
@@ -299,10 +312,35 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__main_list {
     font-size: 14px;
+    margin: 0.5em 0;
+}
+
+.page__main_listpoint {
+    padding: -1em;
+    list-style: disc;
+
 }
 
 .page__main_listpoint::marker {
-    font-size: 30px;
     color: var(--main);
-    margin-top: -3px;
+    line-height: 1rem;
+    font-size: 1.5em;
+}
+
+.img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.form {
+    width: 100%;
+}
+
+.form__item {
+    border: 1px solid var(--main);
+    padding: 0.5em;
+    width: calc(100% - 1.5em + 5px);
 }

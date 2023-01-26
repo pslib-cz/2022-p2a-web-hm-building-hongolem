@@ -7,33 +7,34 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/font.css">
     <title>HM Building</title>
 </head>
 
 <body class="page">
-    <nav class="page__nav">
-        <a class="page__nav_imgcont" href="#"><img class="page__nav_img" src="./media/logo.png" alt="Logo"></a>
-        <input class="page__nav_box" type="checkbox">
-        <div class="page__menu"><p class="page__menu_text font1">MENU</p></div>
-        <ul class="page__nav_container"> 
-            <li class="page__nav_item active font1"><a class="page__nav_link" href="#">DOMŮ</a> </li>
-            <li class="page__nav_item font1"><a class="page__nav_link" href="#sluzby">SLUŽBY</a> </li>
-            <li class="page__nav_item font1"><a class="page__nav_link" href="#reference">REFERENCE</a> </li>
-            <li class="page__nav_item font1"><a class="page__nav_link" href="./links/o_nas.html">O NÁS</a> </li>
-            <li class="page__nav_item font1"><a class="page__nav_link" href="#">KONTAKT</a> </li>
-        </ul>
-    </nav>
-
-    <div class="page__hero">
+    <header class="page__hero">
         <div class="page__hero_overlay"></div>
-        <h1 class="page__hero_header font1">HM Building.cz s.r.o.</h1>
-        <p class="page__hero_text font1">liberecká stavební společnost</p>
-    </div> 
+        <h1 class="page__hero_header font1">HM Building.cz s.r.o. <span class="page__hero_text font1">liberecká stavební společnost</span></h1>
+        <nav class="page__nav">
+            <a class="page__nav_imgcont" href="#"><img class="page__nav_img" src="./media/logo.png" alt="Logo"></a>
+            <input class="page__nav_box" type="checkbox">
+            <div class="page__menu"><p class="page__menu_text font1">MENU</p></div>
+            <menu class="page__nav_container"> 
+                <li class="page__nav_item active font1"><a class="page__nav_link" href="#">DOMŮ</a> </li>
+                <li class="page__nav_item font1"><a class="page__nav_link" href="#sluzby">SLUŽBY</a> </li>
+                <li class="page__nav_item font1"><a class="page__nav_link" href="#reference">REFERENCE</a> </li>
+                <li class="page__nav_item font1"><a class="page__nav_link" href="./links/o_nas.html">O NÁS</a> </li>
+                <li class="page__nav_item font1"><a class="page__nav_link" href="./links/kontakt.html">KONTAKT</a> </li>
+            </menu>
+        </nav>
+    </header> 
 
-    <main class="page__main">
-        <article id="sluzby" class="page__cards">
-            <h2 class="page__main_header font1">Využijte škálu našich <span class="color">služeb</span></h2>
+    <div class="page__main">
+        <div class="page__main_intro">
+            <p class="page__main_header font1">Využijte škálu našich <span class="color">služeb</span></>
             <p class="page__main_text font2">Ačkoliv provádíme především <strong>průmyslové stavby</strong>, není pro nás problém postavit Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí ani <strong>rekonstrukce budov</strong> a jejich údržba a to včetně okolních ploch.</p>
+        </div>
+        <section id="sluzby" class="page__cards">
             
             <article class="page__card">
                 <img class="page__card_img" src="./media/sluzba-novostavby-1200w.jpg" alt="Novostavby">
@@ -50,7 +51,7 @@
                 <div>
                     <h2 class="page__card_header font1">Průmyslové stavby</h2>
                     <p class="page__card_text font2">Realizujeme <strong>průmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím se <strong>dostáváme na přijatelné ceny</strong>.</p>
-                    <a class="page__btn font2" href="./links/novostavby.html">Zobrazit více</a>
+                    <a class="page__btn font2" href="./links/prumysl.html">Zobrazit více</a>
                 </div>
             </article>
 
@@ -59,7 +60,7 @@
                 <div>
                     <h2 class="page__card_header font1">Rekonstrukce domů a jiných staveb</h2>
                     <p class="page__card_text font2">Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <strong>zateplení objektů</strong>, změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. </p>
-                    <a class="page__btn font2" href="./links/novostavby.html">Zobrazit více</a>
+                    <a class="page__btn font2" href="./links/rekonstrukce.html">Zobrazit více</a>
                 </div>
             </article>
 
@@ -68,10 +69,10 @@
                 <div>
                     <h2 class="page__card_header font1">Komunikace a zpevněné plochy</h2>
                     <p class="page__card_text font2">Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací, konstrukcí podkladních</strong> a souvisejících objektů, jako jsou <strong>odvodnění, zpevnění svahů, opěrné zdi</strong> atd.</p>
-                    <a class="page__btn font2" href="./links/novostavby.html">Zobrazit více</a>
+                    <a class="page__btn font2" href="./links/komunikace.html">Zobrazit více</a>
                 </div>
             </article>
-        </article>
+        </section>
 
         <div class="page__banner">
             <div class="page__banner_overlay"></div>
@@ -80,7 +81,7 @@
             <a class="page__btn page__btn--filled font2" href="#">Přesvědčit se</a>
         </div>
 
-        <article id="reference" class="page__cards">
+        <section id="reference" class="page__cards">
             <h2 class="page__main_header font1">Rádi vám ukážeme naše <span class="color">reference</span></h2>
             <p class="page__main_text font2">Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>. To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
             <div class="page__reference_container">
@@ -109,9 +110,9 @@
                 </article>
 
             </div>
-            <a class="page__btn page__btn--filled page__btn--center font2" href="#">Více referencí</a>
-        </article>
-    </main>
+            <a class="btn page__btn--filled page__btn--center font2" href="./links/reference.html">Více referencí</a>
+        </section>
+    </div>
     
     <footer class="page__footer">
         <h2 class="page__footer_header font1">Plácneme si pro Váš projekt?</h2>
