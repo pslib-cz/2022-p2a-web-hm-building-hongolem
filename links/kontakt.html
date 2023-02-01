@@ -17,24 +17,24 @@
         <input class="page__nav_box" type="checkbox">
         <div class="page__menu"><p class="page__menu_text font1">MENU</p></div>
         <ul class="page__nav_container"> 
-            <li class="page__nav_item active font1"><a class="page__nav_link" href="../index.html">DOMŮ</a> </li>
+            <li class="page__nav_item font1"><a class="page__nav_link" href="../index.html">DOMŮ</a> </li>
             <li class="page__nav_item font1"><a class="page__nav_link" href="../index.html#sluzby">SLUŽBY</a> </li>
-            <li class="page__nav_item font1"><a class="page__nav_link" href="#reference">REFERENCE</a> </li>
+            <li class="page__nav_item font1"><a class="page__nav_link" href="./reference.html">REFERENCE</a> </li>
             <li class="page__nav_item font1"><a class="page__nav_link" href="./o_nas.html">O NÁS</a> </li>
-            <li class="page__nav_item font1"><a class="page__nav_link" href="#">KONTAKT</a> </li>
+            <li class="page__nav_item font1 active"><a class="page__nav_link" href="#">KONTAKT</a> </li>
         </ul>
     </nav>
 
     <div class="page__main">
-        <div class="page__cards">
+        <div class="page__content">
             <p class="page__main_header font1">Kontaktujte nás</p>
             <p class="page__main_text font2">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
             <p class="color font1"><strong>+420 775 550 564</strong></p>
             <p class="color font1"><strong>stavby@hm-building.cz</strong></p>
-            <p class="color font1"><strong>Křižanská 12, Liberec XXII-Horní Suchá</p></strong></p>
+            <p class="color font1"><a class="link" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ"><strong>Křižanská 12, Liberec XXII-Horní Suchá</p></a></strong></p>
         </div>
-        <img class="img" src="../media/mapa.jpg" alt="Mapa">
-        <div class="page__cards">
+        <a class="link" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ"><img class="img" src="../media/mapa.jpg" alt="Mapa"></a>
+        <div class="page__content">
             <h2 class="page__main_header font1">Nezávazná poptávka služeb</h2>
             <p class="page__main_text font2">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             <form class="form">
@@ -45,18 +45,17 @@
                 <p class="font2"><strong>Telefon</strong></p>
                 <input type="text" class="form__item">
                 <p class="font2"><strong>Poptávaná služba</strong></p>
-                <input type="text" class="form__item">
+                <select class="form__item font1">
+                    <option value="Novostavba">Novostavba</option>
+                    <option value="Novostavba">Průmyslová stavba</option>
+                    <option value="Novostavba">Rekonstrukce</option>
+                    <option value="Novostavba">Komunikace a zpevněné plochy</option>
+                  </select>
                 <p class="font2"><strong>Poznámka</strong></p>
                 <textarea rows="10" class="form__item"></textarea>
                 <button class="btn page__btn page__btn--filled font2">Odeslat nezávaznou poptávku</button>
             </form>
         </div>
     </div>
-        
-    <footer class="page__footer">
-        <h2 class="page__footer_header font1">Plácneme si pro Váš projekt?</h2>
-        <p class="page__footer_text font2">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        <a class="page__btn page__btn--white page__btn--center font2" href="#">Nezávazně poptat</a>
-    </footer>
 </body>
 </html>

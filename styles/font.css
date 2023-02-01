@@ -9,3 +9,8 @@
 .color {
     color: var(--main);
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
