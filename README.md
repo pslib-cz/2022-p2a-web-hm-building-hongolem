@@ -5,7 +5,7 @@
 
 * [ ] Uklidit classy
 * [ ] Roztřídit font classy
-* [ ] Uklidit CSS
+* [x] Uklidit CSS
 * [ ] Desktop
-* [ ] Mobile
+* [x] Mobile
 * [ ] Validator

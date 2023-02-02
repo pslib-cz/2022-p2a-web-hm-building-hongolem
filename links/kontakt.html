@@ -27,32 +27,57 @@
 
     <div class="page__main">
         <div class="page__content">
-            <p class="page__main_header font1">Kontaktujte nás</p>
+            <p class="page__main_title font1">Kontaktujte nás</p>
             <p class="page__main_text font2">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
-            <p class="color font1"><strong>+420 775 550 564</strong></p>
-            <p class="color font1"><strong>stavby@hm-building.cz</strong></p>
-            <p class="color font1"><a class="link" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ"><strong>Křižanská 12, Liberec XXII-Horní Suchá</p></a></strong></p>
+            <div class="page__main_container">
+                <i class="page__icon_container">
+                    <img class="icon" src="../media/icons/phone.svg" alt="Phone">
+                </i>
+                <p class="page__main_text color font1 bold">+420 775 550 564</p>
+            </div>
+            <div class="page__main_container">
+                <i class="page__icon_container">
+                    <img class="icon" src="../media/icons/mail.svg" alt="Mail">
+                </i>
+                <p class="page__main_text color font1 bold">stavby@hm-building.cz</p>
+            </div>
+            <div class="page__main_container">
+                <i class="page__icon_container">
+                    <img class="icon" src="../media/icons/location.svg" alt="Location">
+                </i>
+                <p class="page__main_text color font1 bold"><a class="link" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křižanská 12, Liberec XXII-Horní Suchá</a></p>
+            </div>
         </div>
         <a class="link" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ"><img class="img" src="../media/mapa.jpg" alt="Mapa"></a>
         <div class="page__content">
             <h2 class="page__main_header font1">Nezávazná poptávka služeb</h2>
             <p class="page__main_text font2">Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             <form class="form">
-                <p class="font2"><strong>Jméno a příjmení</strong></p>
-                <input type="text" class="form__item">
-                <p class="font2"><strong>E-mail</strong></p>
-                <input type="email" class="form__item">
-                <p class="font2"><strong>Telefon</strong></p>
-                <input type="text" class="form__item">
-                <p class="font2"><strong>Poptávaná služba</strong></p>
-                <select class="form__item font1">
-                    <option value="Novostavba">Novostavba</option>
-                    <option value="Novostavba">Průmyslová stavba</option>
-                    <option value="Novostavba">Rekonstrukce</option>
-                    <option value="Novostavba">Komunikace a zpevněné plochy</option>
-                  </select>
-                <p class="font2"><strong>Poznámka</strong></p>
-                <textarea rows="10" class="form__item"></textarea>
+                <label class="form__item font2 bold">
+                    Jméno a příjmení
+                    <input type="text" class="form__item_input">
+                </label>
+                <label class="form__item font2 bold">
+                    E-mail
+                    <input type="email" class="form__item_input">
+                </label>
+                <label class="form__item font2 bold">
+                    Telefon
+                    <input type="text bold" class="form__item_input">
+                </label>
+                <label class="form__item font2 bold">
+                    Poptávaná služba
+                    <select class="form__item_input font1">
+                        <option value="Novostavba">Novostavba</option>
+                        <option value="Novostavba">Průmyslová stavba</option>
+                        <option value="Novostavba">Rekonstrukce</option>
+                        <option value="Novostavba">Komunikace a zpevněné plochy</option>
+                      </select>
+                </label>
+                <label class="form__item font2 bold">
+                    Poznámka
+                    <textarea rows="15" class="form__item_input"></textarea>
+                </label>
                 <button class="btn page__btn page__btn--filled font2">Odeslat nezávaznou poptávku</button>
             </form>
         </div>
