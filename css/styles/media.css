@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+
+    .page__service_img {
+        height: 16em;
+    }
+
+    .page__reference_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    
+}

@@ -1,5 +1,5 @@
 .page {
-    margin-top: 80px;
+    margin-top: 5em;
 }
 
 .page__nav {
@@ -9,7 +9,7 @@
     width: 100%;
     top: 0;
     background-color: var(--background);
-    height: 80px;
+    height: 5em;
     align-items: center;
 }
 
@@ -23,9 +23,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__nav_box {
     position: absolute;
-    right: 20px;
-    width: 50px;
-    height: 40px;
+    right: 1.25em;
+    width: 3em;
+    height: 2.5em;
     z-index: 999;
     opacity: 0;
 }
@@ -36,18 +36,18 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__nav_text {
     color: var(--text);
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 0;
     position: absolute;
-    bottom: 22px;
-    left: 4px;
+    bottom: 1.4em;
+    left: 0.25em;
 }
 
 .page__menu, .page__menu::before, .page__menu::after {
     position: absolute;
-    right: 20px;
-    width: 48px;
-    height: 8px;
+    right: 1.25em;
+    width: 3em;
+    height: 0.5em;
     background: linear-gradient(90deg, var(--main) 50%, var(--background) 100%);
 }
 
@@ -57,25 +57,25 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__menu::before {
     content: "";
-    margin-top: -12px;
+    margin-top: -0.75em;
 }
 
 .page__menu::after {
     content: "";
-    margin-top: 12px;
+    margin-top: 0.75em;
 }
 
 .page__menu_text {
-    position:absolute;
-    font-size: .7em;
-    bottom: 20px;
+    position: absolute;
+    font-size: 0.7rem;
+    bottom: 1.25em;
     margin: 0;
     left: 50%;
     transform: translate(-50%);
 }
 
 .page__nav_container {
-    top: 85px;
+    top: 5.3em;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -91,9 +91,9 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 15px 25px 15px;
+    border-width: 0 1em 1.5em 1em;
     border-color: transparent transparent var(--main) transparent;
-    margin-top: -25px;
+    margin-top: -1.5em;
     position: absolute;
     right: 0.5em;
     top: 0;
@@ -131,7 +131,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     height: 15em;
     background-size: 200%;
     background-position: 40%;
-    background-image: url(../media/pageheader-1920w.jpg);
+    background-image: url(../../media/pageheader-1920w.jpg);
     display: flex;
     justify-content: end;
     flex-direction: column;
@@ -152,7 +152,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 .page__header_text_span {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     padding: 1em;
     display: block;
@@ -163,37 +163,36 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     color: var(--text3);
 }
 
-
-
 .page__services, .page__references, .page__content {
     padding: 1em;
 }
 
-.page__service{
+.page__services{
     display: grid;
     grid-template-columns: 1fr;
-    padding-bottom: 1em;
+    gap: 2.5em;
+    justify-items: center;
 }
 
 .page__service:nth-of-type(even) .page__service_img{
-    border-radius: 0px 0px 0px 40px;
+    border-radius: 0 0 0 2.5em;
 }
 
 .page__service_img{
     width: 100%;
     height: 10em;
-    object-fit:cover;
-    border-radius: 0px 0px 40px 0px;
+    object-fit: cover;
+    border-radius: 0 0 2.5em 0;
 
 }
 
 .page__service_header{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
 .page__service_text{
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 .page__reference {
@@ -202,6 +201,10 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__reference_container{
     margin: 5em 0 2em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5em;
+    justify-items: center;
 }
 
 .page__reference_img{
@@ -211,13 +214,13 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 .page__reference_header{
-    font-size: 22px;
+    font-size: 1.4rem;
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
 .page__reference_text{
-    font-size: 12px;
+    font-size: 0.75rem;
     margin: 0;
 }
 
@@ -234,22 +237,22 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 .page__main_title {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .page__main_header {
-    font-size: 22px;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 .page__main_text {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
 .page__main_list {
-    font-size: 14px;
+    font-size: 0.9rem;
     margin: 0.5em -1.5em;
 }
 
@@ -262,7 +265,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__main_listpoint::marker {
     color: var(--main);
     line-height: 1rem;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .page__banner{
@@ -271,7 +274,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     position: relative;
     background-position: center;
     background-size: 210%;
-    background-image:url(../media/background-CTAblock-4460w.jpg);
+    background-image:url(../../media/background-CTAblock-4460w.jpg);
 }
 
 .page__banner_overlay{
@@ -286,7 +289,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__banner_text{
     position: relative;
     color: var(--text3);
-    font-size: 17px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -347,10 +350,6 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     padding: 0.5em;
 }
 
-.gallery {
-
-}
-
 .page__btn{
     text-decoration: none;
     font-weight: 700;
@@ -380,8 +379,8 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 }
 
 .btn {
-    font-size: 14px;
-    padding: 16px 40px;
+    font-size: 0.9rem;
+    padding: 1em 2.5em;
     margin: 1em 0;
 }
   
