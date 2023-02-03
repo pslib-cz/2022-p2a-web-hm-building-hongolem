@@ -1,7 +1,3 @@
-.page {
-    margin-top: 5em;
-}
-
 .page__nav {
     z-index: 999;
     position: absolute;
@@ -11,6 +7,7 @@
     background-color: var(--background);
     height: 5em;
     align-items: center;
+    padding: 0;
 }
 
 .page__nav_imgcont {
@@ -110,7 +107,6 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 .page__nav_item {
     width: 80%;
     text-align: left;
-    padding-left: 2em;
     color: var(--text3);
 }
 
@@ -118,17 +114,13 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     font-weight: 700;
 }
 
-.page__nav_item:first-child {
-    padding-top: 1em;
-}
-
-.page__nav_item:last-child {
-    padding-bottom: 1em;
+.page__nav_container {
+    padding: 1em;
 }
 
 .page__header{
     width: 100%;
-    height: 15em;
+    height: 25em;
     background-size: 200%;
     background-position: 40%;
     background-image: url(../../media/pageheader-1920w.jpg);
@@ -141,18 +133,19 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__header_overlay{
     width: 100%;
-    height: 15em;
+    height: 20em;
     position: absolute;
     background-color: var(--overlay);
 }
 
 .page__header_text{
+    font-size: 2rem;
     margin: 0;
     font-weight: 800;
 }
 
 .page__header_text_span {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 400;
     padding: 1em;
     display: block;
@@ -301,6 +294,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     justify-content: center;
     margin-top: 1em;
     bottom: 0;
+    padding-bottom: 1em;
 }
 
 .page__footer_header , .page__footer_text{
@@ -310,6 +304,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .img {
     width: 100%;
+    height: 100%;
     display: block;
     margin: 0;
     padding: 0;
@@ -383,10 +378,35 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     padding: 1em 2.5em;
     margin: 1em 0;
 }
+
+.header__btn {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+    display: none;
+}
   
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
+    grid-auto-rows: 350px;
     gap: 1em;
     grid-auto-flow: dense;
+}
+
+.row--2 {
+    grid-row: span 2 / span 2;
+}
+
+.row--3 {
+    grid-row: span 3 / span 3;
+}
+
+.page__header_small {
+    height: 150px;
+}
+
+.header-switch {
+    background-color: white;
 }
