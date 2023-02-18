@@ -4,11 +4,12 @@
 ## To Do
 
 * [ ] Uklidit classy
-* [ ] Roztřídit font classy
+* [ ] Roztřídit classy
 * [x] Uklidit CSS
-* [ ] Desktop
+* [x] Desktop
 * [x] Mobile
 * [ ] Validator
+* [ ] Dohlazení
 
 * [ ] bude dodrženo "kodérovo desatero"
 * [ ] <h1> chápu "největší nadpis“ pro jeho formátování, ne sémantiku
