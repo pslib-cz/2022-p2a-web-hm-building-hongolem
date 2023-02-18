@@ -297,6 +297,12 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     padding-bottom: 1em;
 }
 
+.page__footer_header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
 .page__footer_header , .page__footer_text{
     text-align: center;
     color: var(--text3);

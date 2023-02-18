@@ -10,6 +10,10 @@
     .page__reference_container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .page__footer_header {
+        font-size: 3rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -80,6 +84,7 @@
 
     .page__reference_container{
         grid-template-columns: repeat(3, 1fr);
+
     }
 
     .page__main_intro, .page__reference_intro {
@@ -87,7 +92,7 @@
     }
 
     .page__footer_header {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .page__footer_text {
         font-size: 1.1rem;
@@ -109,7 +114,7 @@
     }
 
     .page__services, .page__main_intro, .page__references, .page__content {
-        padding: 2em 15em;
+        padding: 2em 2em;
     }
 
     .page__main_intro, .page__main_title {
@@ -134,5 +139,9 @@
 @media only screen and (min-width: 1920px) {
     html {
         font-size: 22px;
+    }
+
+    .page__footer_header {
+        font-size: 2.5rem;
     }
 }
