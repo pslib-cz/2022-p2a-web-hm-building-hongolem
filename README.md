@@ -11,6 +11,7 @@
 * [ ] Validator
 * [ ] Dohlazení
 
+## Opravy pana Kazdy
 * [ ] bude dodrženo "kodérovo desatero"
 * [x] ``<h1>`` chápu "největší nadpis“ pro jeho formátování, ne sémantiku
 * [x] Vlastnost font-size a font-family nastavujeme selektoru html {}, ne body {}
