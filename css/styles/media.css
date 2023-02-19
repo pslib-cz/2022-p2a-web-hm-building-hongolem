@@ -1,24 +1,33 @@
+@media only screen and (max-width: 767px) {
+    .service__img {
+        height: 10em;
+    }
+}
 @media only screen and (min-width: 768px) {
     html {
         font-size: 16px;
     }
 
-    .page__service__img {
-        max-height: 12.5em;
+    .text-header {
+        font-size: 1.5rem;
+    }
+
+    .service__img {
+        max-height: 17em;
     }
 
     .reference__container{
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .footer__header {
-        font-size: 2rem;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
     html {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
     }
 
     .page__header {
@@ -26,7 +35,12 @@
         top: 0;
         margin-bottom: 2em;
     }
-
+    .page__header.page__header__small {
+        height: 10em;
+    }
+    .header__btn {
+        display: inline-block;
+    }
     .page__nav {
         top: 2em;
         max-width: 1510px;
@@ -34,11 +48,9 @@
         align-self: center;
         justify-content: space-between;
     }
-
     .page__nav__container::after {
         display: none;
     }
-
     .page__nav__container {
         display: flex;
         flex-direction: row;
@@ -64,32 +76,51 @@
         padding: .5em;
     }
 
-    .page__service{
-        display: flex;
-        gap: 0 1em;
+    .title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .intro-text {
+        text-align: center;
+        max-width: 960px;
+        margin: 0 auto;
     }
 
+    .page__service {
+        display: flex;
+        gap: 0 4em;
+    }
     .page__service:nth-child(even) {
         flex-direction: row-reverse;
     }
-
-    .page__service__img-container, .page__service-container {
+    .service__img-container, .page__service-container {
         flex-basis: 50%;
     }
 
-    .reference__container{
-        grid-template-columns: repeat(3, 1fr);
+    .page__banner {
+        padding: 5em 7.5em;
+
     }
 
-    .reference__link:hover .reference__text-container {
+    .references {
+        text-align: center;
+    }
+    .reference__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .reference__link:hover .text-container {
         display: flex;
         background-color: rgba(235, 108, 39, 0.6);
         color: var(--text3);
         justify-content: center;
         flex-direction: column;
     }
+    .reference {
+        position: relative;
+    }
 
-    .reference__text-container {
+    .text-container {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -98,43 +129,8 @@
         display: none;
     }
 
-    .reference {
-        position: relative;
-    }
-
-    .reference__header, .page__service__header {
-        text-transform: uppercase;
-    }
-
-    .page__main__intro, .reference__intro {
-        text-align: center;
-    }
-
-    .footer__text {
-        font-size: 1.1rem;
-    }
-
     .gallery {
         grid-template-columns: repeat(3, 1fr);
-    }
-    .page__header__small {
-        height: 10em;
-    }
-
-    .header__btn {
-        display: inline-block;
-    }
-
-    .header-switch {
-        display: none;
-    }
-
-    .page__services, .page__main__intro, .references, .page__content {
-        padding: 2em 2em;
-    }
-
-    .page__main__intro, .page__main__title {
-        text-align: center;
     }
 
     .contact {
@@ -144,15 +140,23 @@
         align-items: center;
         justify-content: center;
     }
-
     .form {
         max-width: 666px;
     }
 
+    .content {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
     html {
         font-size: 22px;
+    }
+
+    .services, .references {
+        max-width: 1620px;
+        margin: 5em auto;
     }
 }

@@ -4,172 +4,18 @@
     min-height: 100vh;
 }
 
-.page__nav {
-    width: 100%;
-    z-index: 999;
-    position: absolute;
-    display: flex;
-    top: 0;
-    background-color: var(--background);
-    height: 5em;
-    align-items: center;
-    padding: 0;
-}
-
-nav input[type="checkbox"]:checked ~ .page__nav__container{
-    display: block;
-}
-
-.page__nav__box {
-    position: absolute;
-    right: 1.25em;
-    width: 3em;
-    height: 2.5em;
-    z-index: 999;
-    opacity: 0;
-}
-
-.page__nav__text {
-    color: var(--text);
-    font-size: 0.75rem;
-    margin: 0;
-    position: absolute;
-    bottom: 1.4em;
-    left: 0.25em;
-}
-
-.page__menu, .page__menu::before, .page__menu::after {
-    position: absolute;
-    right: 1.25em;
-    width: 3em;
-    height: 0.5em;
-    background: linear-gradient(90deg, var(--main) 50%, var(--background) 100%);
-}
-
-.page__menu::before, .page__menu::after {
-    right: 0;
-}
-
-.page__menu::before {
-    content: "";
-    margin-top: -0.75em;
-}
-
-.page__menu::after {
-    content: "";
-    margin-top: 0.75em;
-}
-
-.page__menu__text {
-    position: absolute;
-    font-size: 0.7rem;
-    bottom: 1.25em;
-    margin: 0;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-.page__nav__container {
-    top: 5.3em;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: absolute;
-    left: 1em;
-    right: 1.3em;
-    background-color: var(--main);
-    display: none;
-}
-
-.page__nav__container::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 1em 1.5em 1em;
-    border-color: transparent transparent var(--main) transparent;
-    margin-top: -1.5em;
-    position: absolute;
-    right: 0.5em;
-    top: 0;
-}
-
-.page__nav__link {
-    padding: .5em 0;
-    display: block;
-    color: var(--text3);
-    list-style: none;
-}
-
-.page__nav__item {
-    text-align: left;
-    color: var(--text3);
-}
-
-.page__nav__item.active {
-    font-weight: 700;
-}
-
-.page__nav__container {
+.services, .references, .content, .intro-text {
     padding: 1em;
 }
 
-.page__header{
-    height: 25em;
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../../media/pageheader-1920w.jpg);
-    background-blend-mode: normal, normal, hue, normal;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    text-align: center;
-    color: var(--text3);
-    background-position: center;
-    background-size: cover;
-}
-
-.page__header__text{
-    font-size: 2rem;
-    margin: 0;
-    font-weight: 800;
-}
-
-.page__header__text__span {
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 1em;
-    display: block;
-}
-
-.page__header__text, .page__header__text__span {
-    z-index: 2;
-    color: var(--text3);
-}
-
-.page__services, .references, .page__content {
-    padding: 1em;
-}
-
-.page__services{
+.services {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5em;
     justify-items: center;
 }
 
-.page__service__header{
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.page__service__text{
-    font-size: 0.9rem;
-}
-
-.references {
-    text-align: center;
-}
-
-.reference__container{
+.reference__container {
     margin: 5em 0 2em 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -177,101 +23,29 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     justify-items: center;
 }
 
-.reference__header{
-    font-size: 1.4rem;
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-
-.reference__text{
-    font-size: 0.75rem;
-    margin: 0;
-}
-
-.reference__header, .reference__text{
+.text-container {
     text-align: center;
 }
 
 .page__main {
-    padding: 2.5em 0;
     flex-grow: 1;
 }
-
-.page__main__intro {
-    padding: 1em;
-}
-
-.page__main__title {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.page__main__header {
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-
-.page__main__text {
-    font-size: 0.9rem;
-    font-weight: 400;
-}
-
-.page__main__list {
-    font-size: 0.9rem;
-    margin: 0.5em -1.5em;
-}
-
-.page__main__listpoint {
-    padding: -1em;
-    list-style: disc;
-    margin: 0.5em;
-}
-
-.page__main__listpoint::marker {
-    color: var(--main);
-    line-height: 1rem;
-    font-size: 1.5rem;
-}
-
-.page__banner{
-    padding: 1em;
-    position: relative;
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../../media/background-CTAblock-4460w.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
-.page__banner__text{
-    position: relative;
-    color: var(--text3);
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.footer{
-    text-align: center;
-    padding: 2em;
-    background-color: var(--main);
-    margin-top: 1em;
-    bottom: 0;
-    padding-bottom: 1em;
-}
-
-.footer__header {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0;
-}
-
-.footer__header , .footer__text{
-    color: var(--text3);
-}
-
 .page__main__container {
     margin: 1em 0;
     display: flex;
     align-items: center;
 }
+
+.page__banner {
+    padding: 1em;
+    position: relative;
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../../media/background-CTAblock-4460w.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--text3);
+    font-weight: 700;
+}
+
 
 .page__icon__container {
     width: 2em;
@@ -288,7 +62,6 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
 .page__map-overlay {
     position: relative;
 }
-
 .page__map-overlay::before {
     content: "";
     position: absolute;
@@ -297,7 +70,6 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     top: 0;
     left: 0;
 }
-
 .page__map-overlay:hover::before {
     background-color: var(--main);
     opacity: 0.5;
@@ -308,12 +80,11 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     display: flex;
     flex-direction: column;
 }
-
 .form__item__input {
     border: 1px solid var(--main);
     padding: 0.5em;
 }
-  
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -321,15 +92,9 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     gap: 1em;
     grid-auto-flow: dense;
 }
-
 .row--2 {
     grid-row: span 2 / span 2;
 }
-
 .row--3 {
     grid-row: span 3 / span 3;
-}
-
-.header-switch {
-    background-color: white;
 }

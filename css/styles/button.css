@@ -1,4 +1,4 @@
-.btn{
+.btn {
     text-decoration: none;
     font-weight: 700;
     color: var(--main);
@@ -6,30 +6,26 @@
     display: inline-block;
     border: 1px dashed var(--main);
 }
-
-.btn--filled{
-    color: var(--text3);
-    background-color: var(--main);
-    border: none;   
-}
-
-.btn--white{
-    color: var(--main);
-    background-color: var(--text3);
-    border: none;
-}
-
-.btn--center{
-    text-align: center;
-}
-
 .header__btn {
     gap: 1em;
     align-items: center;
     margin-bottom: 2em;
     display: none;
 }
-
 .form__btn {
     margin-top: 1em;
+}
+
+.btn--filled {
+    color: var(--text3);
+    background-color: var(--main);
+    border: none;   
+}
+.btn--white {
+    color: var(--main);
+    background-color: var(--text3);
+    border: none;
+}
+.btn--center {
+    text-align: center;
 }

@@ -11,15 +11,15 @@
     --font2: 'Inter', sans-serif;
 }
 
-body{
-    margin: 0;
-    background-color: var(--background);
-    color: var(--text);
-}
-
 html {
     font-size: 14px;
     max-width: 1920px;
     margin: 0 auto;
     scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
 }

@@ -1,0 +1,104 @@
+.page__nav {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    display: flex;
+    top: 0;
+    background-color: var(--background);
+    height: 5em;
+    align-items: center;
+    padding: 0;
+}
+nav input[type="checkbox"]:checked ~ .page__nav__container {
+    display: block;
+}
+.page__nav__box {
+    position: absolute;
+    right: 1.25em;
+    width: 3em;
+    height: 2.5em;
+    z-index: 999;
+    opacity: 0;
+}
+.page__menu, .page__menu::before, .page__menu::after {
+    position: absolute;
+    right: 1.25em;
+    width: 3em;
+    height: 0.5em;
+    background: linear-gradient(90deg, var(--main) 50%, var(--background) 100%);
+}
+.page__menu::before, .page__menu::after {
+    content: "";
+    right: 0;
+}
+.page__menu::before {
+    margin-top: -0.75em;
+}
+.page__menu::after {
+    margin-top: 0.75em;
+}
+.page__nav__container {
+    top: 5.3em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    left: 1em;
+    right: 1.3em;
+    background-color: var(--main);
+    display: none;
+}
+.page__nav__container::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1em 1.5em 1em;
+    border-color: transparent transparent var(--main) transparent;
+    margin-top: -1.5em;
+    position: absolute;
+    right: 0.5em;
+    top: 0;
+}
+.page__nav__link {
+    padding: .5em 0;
+    display: block;
+    color: var(--text3);
+    list-style: none;
+}
+.page__nav__item {
+    text-align: left;
+    color: var(--text3);
+}
+.page__nav__item.active {
+    font-weight: 700;
+}
+.page__nav__container {
+    padding: 1em;
+}
+
+.page__header {
+    height: 25em;
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../../media/pageheader-1920w.jpg);
+    background-blend-mode: normal, normal, hue, normal;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text3);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5em;
+}
+.page__header.page__header__small {
+    height: 0;
+}
+
+.footer {
+    margin-top: 5em;
+    text-align: center;
+    padding: 2em;
+    background-color: var(--main);
+    bottom: 0;
+    padding-bottom: 1em;
+}

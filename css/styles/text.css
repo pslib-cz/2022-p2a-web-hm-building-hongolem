@@ -1,0 +1,72 @@
+.font1 {
+    font-family: var(--font);
+}
+.font2 {
+    font-family: var(--font2);
+}
+.color {
+    color: var(--main);
+}
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+.bold {
+    font-weight: 700;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+h1.title {
+    padding-top: 2em;
+}
+
+.text-header {
+    font-size: 1.4rem;
+}
+
+.text, .page__main__list, .page__header__text__span {
+    font-size: 1rem;
+}
+.page__nav__text {
+    color: var(--text);
+    font-size: 0.75rem;
+    margin: 0;
+    position: absolute;
+    bottom: 1.75em;
+    left: 0.4em;
+}
+.page__header__text {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 800;
+}
+.page__header__text__span {
+    font-weight: 300;
+    display: block;
+    padding: 1em;
+}
+.page__header__text, .page__header__text__span {
+    z-index: 2;
+    color: var(--text3);
+}
+
+.footer {
+    color: var(--text3);
+}
+
+.page__main__list {
+    margin: 0.5em -1.5em;
+}
+.page__main__listpoint {
+    padding: -1em;
+    list-style: disc;
+    margin: 0.5em;
+}
+.page__main__listpoint::marker {
+    color: var(--main);
+    line-height: 1rem;
+    font-size: 1.5rem;
+}

@@ -7,18 +7,13 @@
     object-fit: cover;
 }
 
-.page__nav__img-container {
-    height: 50px;
+.nav__img-container {
+    height: 40px;
 }
 
-.page__nav__img {
-    height: 100%;
-}
-
-.page__service:nth-of-type(even) .page__service__img{
+.page__service:nth-of-type(even) .service__img {
     border-radius: 0 0 0 2.5em;
 }
-
-.page__service__img{
+.service__img {
     border-radius: 0 0 2.5em 0;
 }
