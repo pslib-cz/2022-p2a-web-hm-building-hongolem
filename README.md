@@ -3,23 +3,24 @@
 
 ## To Do
 
-* [ ] Uklidit classy
-* [ ] Roztřídit classy
+* [x] Uklidit classy
+* [x] Roztřídit classy
 * [x] Uklidit CSS
 * [x] Desktop
 * [x] Mobile
-* [ ] Validator
-* [ ] Dohlazení
+* [x] Validator
+* [x] Dohlazení
+* [ ] Lighthouse
 
 ## Opravy pana Kazdy
-* [ ] bude dodrženo "kodérovo desatero"
+* [x] bude dodrženo "kodérovo desatero"
 * [x] ``<h1>`` chápu "největší nadpis“ pro jeho formátování, ne sémantiku
 * [x] Vlastnost font-size a font-family nastavujeme selektoru html {}, ne body {}
 * [x] Font-size nastavujte v jednotkách em/rem a ne v px pro ovlivnění z rodiče/dokumentu
 * [x] V kontakt.html jsou kontaktní údaje (tel., mobil, adresa) klikatelné odkazy.
 * [x] Každý samostatný ``<a>`` button/cta má být buď display block nebo inline-block
 * [x] Nenastavovat width 100%, ale ani fixní výšku (existují výjimky)
-* [ ] Vytváření redundantních stylů pro totéž – text__novostavby / text__domy apod. má stejné vlastnosti
+* [x] Vytváření redundantních stylů pro totéž – text__novostavby / text__domy apod. má stejné vlastnosti
 * [x] Neumí pracovat s formuláři.
 
 ### Kodérovo desatero (třicetitero)
@@ -41,7 +42,7 @@ object-fit: cover;``
 * [x] CSS Grid používám zejména pro layout stránky (pomocí areas) a ortogonální skupiny (galerie)
 * [x] neflexuji veškerý obsah, pokud to není nutné, tedy neporušuji (nenahrazuji) content flow (To znamená, že flex používám zejména pro horizontální rozmístění prvků!)
 * [x] neduplikuji CSS napříč media queries – pouze pozměňuji patřičné vlastnosti
-* [ ] CSS dokumenty rozděluji podle užití, např. typography.css, layout.css, componets.css – nepojmenovávám (a nerozděluji) je dle sekce webu, kterou ovliňují – ne kontakt.css, zanrove.css
+* [x] CSS dokumenty rozděluji podle užití, např. typography.css, layout.css, componets.css – nepojmenovávám (a nerozděluji) je dle sekce webu, kterou ovliňují – ne kontakt.css, zanrove.css
 * [x] hlídám si, jaké CSS vlastnosti má tag definované defaultně – tj. například margin u ``<figure>`` nebo ``<p>``
 * [x] navigaci na stránce vkládám do konstrukce: ``<nav>`` ``<menu>`` ``<li><a href=“#“>odkaz</a>`` ``</menu>`` ``</nav>``
 
