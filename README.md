@@ -10,7 +10,7 @@
 * [x] Mobile
 * [x] Validator
 * [x] Dohlazení
-* [ ] Lighthouse
+* [x] Lighthouse
 
 ## Opravy pana Kazdy
 * [x] bude dodrženo "kodérovo desatero"
