@@ -145,7 +145,7 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     color: var(--text3);
 }
 
-.page__services, .page__references, .page__content, .page__reference {
+.page__services, .references, .page__content {
     padding: 1em;
 }
 
@@ -165,11 +165,11 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     font-size: 0.9rem;
 }
 
-.page__references {
+.references {
     text-align: center;
 }
 
-.page__reference__container{
+.reference__container{
     margin: 5em 0 2em 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -177,18 +177,18 @@ nav input[type="checkbox"]:checked ~ .page__nav__container{
     justify-items: center;
 }
 
-.page__reference__header{
+.reference__header{
     font-size: 1.4rem;
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
-.page__reference__text{
+.reference__text{
     font-size: 0.75rem;
     margin: 0;
 }
 
-.page__reference__header, .page__reference__text{
+.reference__header, .reference__text{
     text-align: center;
 }
 
