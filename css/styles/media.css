@@ -3,15 +3,15 @@
         font-size: 16px;
     }
 
-    .page__service_img {
-        height: 16em;
+    .page__service__img {
+        max-height: 12.5em;
     }
 
-    .page__reference_container{
+    .page__reference__container{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .page__footer_header {
+    .footer__header {
         font-size: 2rem;
     }
 }
@@ -35,11 +35,11 @@
         justify-content: space-between;
     }
 
-    .page__nav_container::after {
+    .page__nav__container::after {
         display: none;
     }
 
-    .page__nav_container {
+    .page__nav__container {
         display: flex;
         flex-direction: row;
         position: unset;
@@ -47,20 +47,20 @@
         background-color: white;
         gap: 1em;
     }
-    .page__nav_box, .page__menu {
+    .page__nav__box, .page__menu {
         display: none;
     }
-    .page__nav_link {
+    .page__nav__link {
         text-decoration: none;
         color: var(--text);
     }
-    .page__nav_item.active a {
+    .page__nav__item.active a {
         color: white;
     }
-    .page__nav_item.active {
+    .page__nav__item.active {
         background-color: var(--main);
     }
-    .page__nav_item {
+    .page__nav__item {
         padding: .5em;
     }
 
@@ -73,46 +73,43 @@
         flex-direction: row-reverse;
     }
 
-    .page__service_img-container, .page__service-container {
+    .page__service__img-container, .page__service-container {
         flex-basis: 50%;
     }
 
-    .page__reference_container{
+    .page__reference__container{
         grid-template-columns: repeat(3, 1fr);
 
     }
 
-    .page__main_intro, .page__reference_intro {
+    .page__main__intro, .page__reference__intro {
         text-align: center;
     }
 
-    .page__footer_header {
-        font-size: 2rem;
-    }
-    .page__footer_text {
+    .footer__text {
         font-size: 1.1rem;
     }
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
-    .page__header_small {
+    .page__header__small {
         height: 10em;
     }
 
     .header__btn {
-        display: block;
+        display: inline-block;
     }
 
     .header-switch {
         display: none;
     }
 
-    .page__services, .page__main_intro, .page__references, .page__content {
+    .page__services, .page__main__intro, .page__references, .page__content {
         padding: 2em 2em;
     }
 
-    .page__main_intro, .page__main_title {
+    .page__main__intro, .page__main__title {
         text-align: center;
     }
 
@@ -122,7 +119,6 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-        margin: 0 -15em 0 0;
     }
 
     .form {
@@ -134,9 +130,5 @@
 @media only screen and (min-width: 1920px) {
     html {
         font-size: 22px;
-    }
-
-    .page__footer_header {
-        font-size: 2rem;
     }
 }

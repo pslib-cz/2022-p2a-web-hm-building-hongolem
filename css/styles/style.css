@@ -16,11 +16,11 @@
     padding: 0;
 }
 
-nav input[type="checkbox"]:checked ~ .page__nav_container{
+nav input[type="checkbox"]:checked ~ .page__nav__container{
     display: block;
 }
 
-.page__nav_box {
+.page__nav__box {
     position: absolute;
     right: 1.25em;
     width: 3em;
@@ -29,7 +29,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     opacity: 0;
 }
 
-.page__nav_text {
+.page__nav__text {
     color: var(--text);
     font-size: 0.75rem;
     margin: 0;
@@ -60,7 +60,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     margin-top: 0.75em;
 }
 
-.page__menu_text {
+.page__menu__text {
     position: absolute;
     font-size: 0.7rem;
     bottom: 1.25em;
@@ -69,7 +69,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     transform: translate(-50%);
 }
 
-.page__nav_container {
+.page__nav__container {
     top: 5.3em;
     padding: 0;
     margin: 0;
@@ -81,7 +81,7 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     display: none;
 }
 
-.page__nav_container::after {
+.page__nav__container::after {
     content: "";
     width: 0;
     height: 0;
@@ -94,23 +94,23 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     top: 0;
 }
 
-.page__nav_link {
+.page__nav__link {
     padding: .5em 0;
     display: block;
     color: var(--text3);
     list-style: none;
 }
 
-.page__nav_item {
+.page__nav__item {
     text-align: left;
     color: var(--text3);
 }
 
-.page__nav_item.active {
+.page__nav__item.active {
     font-weight: 700;
 }
 
-.page__nav_container {
+.page__nav__container {
     padding: 1em;
 }
 
@@ -127,25 +127,25 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     background-size: cover;
 }
 
-.page__header_text{
+.page__header__text{
     font-size: 2rem;
     margin: 0;
     font-weight: 800;
 }
 
-.page__header_text_span {
+.page__header__text__span {
     font-size: 1rem;
     font-weight: 400;
     padding: 1em;
     display: block;
 }
 
-.page__header_text, .page__header_text_span {
+.page__header__text, .page__header__text__span {
     z-index: 2;
     color: var(--text3);
 }
 
-.page__services, .page__references, .page__content {
+.page__services, .page__references, .page__content, .page__reference {
     padding: 1em;
 }
 
@@ -156,20 +156,20 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     justify-items: center;
 }
 
-.page__service_header{
+.page__service__header{
     font-size: 1.25rem;
     font-weight: 700;
 }
 
-.page__service_text{
+.page__service__text{
     font-size: 0.9rem;
 }
 
-.page__reference {
-    padding: 1em;
+.page__references {
+    text-align: center;
 }
 
-.page__reference_container{
+.page__reference__container{
     margin: 5em 0 2em 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -177,18 +177,18 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     justify-items: center;
 }
 
-.page__reference_header{
+.page__reference__header{
     font-size: 1.4rem;
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
-.page__reference_text{
+.page__reference__text{
     font-size: 0.75rem;
     margin: 0;
 }
 
-.page__reference_header, .page__reference_text{
+.page__reference__header, .page__reference__text{
     text-align: center;
 }
 
@@ -197,37 +197,37 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     flex-grow: 1;
 }
 
-.page__main_intro {
+.page__main__intro {
     padding: 1em;
 }
 
-.page__main_title {
+.page__main__title {
     font-size: 2rem;
     font-weight: 700;
 }
 
-.page__main_header {
+.page__main__header {
     font-size: 1.4rem;
     font-weight: 700;
 }
 
-.page__main_text {
+.page__main__text {
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-.page__main_list {
+.page__main__list {
     font-size: 0.9rem;
     margin: 0.5em -1.5em;
 }
 
-.page__main_listpoint {
+.page__main__listpoint {
     padding: -1em;
     list-style: disc;
     margin: 0.5em;
 }
 
-.page__main_listpoint::marker {
+.page__main__listpoint::marker {
     color: var(--main);
     line-height: 1rem;
     font-size: 1.5rem;
@@ -235,49 +235,45 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
 
 .page__banner{
     padding: 1em;
-    height: 10em;
     position: relative;
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../../media/background-CTAblock-4460w.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.page__banner_text{
+.page__banner__text{
     position: relative;
     color: var(--text3);
     font-size: 1rem;
     font-weight: 700;
 }
 
-.page__footer{
+.footer{
+    text-align: center;
     padding: 2em;
     background-color: var(--main);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin-top: 1em;
     bottom: 0;
     padding-bottom: 1em;
 }
 
-.page__footer_header {
+.footer__header {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0;
 }
 
-.page__footer_header , .page__footer_text{
-    text-align: center;
+.footer__header , .footer__text{
     color: var(--text3);
 }
 
-.page__main_container {
-    display: flex;
+.page__main__container {
     margin: 1em 0;
+    display: flex;
     align-items: center;
 }
 
-.page__icon_container {
+.page__icon__container {
     width: 2em;
     height: 2em;
     margin-right: 1em;
@@ -289,13 +285,31 @@ nav input[type="checkbox"]:checked ~ .page__nav_container{
     justify-content: center;
 }
 
+.page__map-overlay {
+    position: relative;
+}
+
+.page__map-overlay::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.page__map-overlay:hover::before {
+    background-color: var(--main);
+    opacity: 0.5;
+}
+
 .form__item {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
 }
 
-.form__item_input {
+.form__item__input {
     border: 1px solid var(--main);
     padding: 0.5em;
 }
