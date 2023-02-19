@@ -7,10 +7,6 @@
     object-fit: cover;
 }
 
-.nav__img-container {
-    height: 40px;
-}
-
 .page__service:nth-of-type(even) .service__img {
     border-radius: 0 0 0 2.5em;
 }

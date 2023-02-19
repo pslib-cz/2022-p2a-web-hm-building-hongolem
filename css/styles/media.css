@@ -47,6 +47,7 @@
         width: calc(100% - 2em);
         align-self: center;
         justify-content: space-between;
+        height: 3em;
     }
     .page__nav__container::after {
         display: none;
@@ -56,8 +57,9 @@
         flex-direction: row;
         position: unset;
         padding: 0;
-        background-color: white;
+        background-color: var(--background);
         gap: 1em;
+        height: 3em;
     }
     .page__nav__box, .page__menu {
         display: none;
@@ -67,7 +69,7 @@
         color: var(--text);
     }
     .page__nav__item.active a {
-        color: white;
+        color: var(--background);
     }
     .page__nav__item.active {
         background-color: var(--main);

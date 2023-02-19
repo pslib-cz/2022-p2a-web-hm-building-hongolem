@@ -9,6 +9,10 @@
     align-items: center;
     padding: 0;
 }
+.nav__img-container {
+    height: 40px;
+    margin-left: 0.2em;
+}
 nav:has(input[type="checkbox"]:checked) .page__nav__container {
     display: block;
 }

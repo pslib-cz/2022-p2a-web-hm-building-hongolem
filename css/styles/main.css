@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;700;800&display=swap');
 
 :root {
-    --main: #eb6c27;
+    --main: #eb6c27;/*#D04A00 pro lighthouse accessibility 100*/
     --background: #ffffff;
     --text: #3a3a3a;
     --text2: #888888;
