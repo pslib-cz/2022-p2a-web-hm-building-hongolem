@@ -80,7 +80,7 @@ nav:has(input[type="checkbox"]:checked) .page__nav__container {
 
 .page__header {
     height: 25em;
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../../media/pageheader-1920w.jpg);
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../../media/pageheader-1920w.webp);
     background-blend-mode: normal, normal, hue, normal;
     display: flex;
     justify-content: end;
