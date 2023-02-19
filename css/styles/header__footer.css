@@ -9,11 +9,12 @@
     align-items: center;
     padding: 0;
 }
-nav input[type="checkbox"]:checked ~ .page__nav__container {
+nav:has(input[type="checkbox"]:checked) .page__nav__container {
     display: block;
 }
 .page__nav__box {
     position: absolute;
+    top: 1em;
     right: 1.25em;
     width: 3em;
     height: 2.5em;
